@@ -1,24 +1,4 @@
-# README
+Bu proje tamamen Microsoft Antigravity kullanılarak geliştirilmiştir.
+Tüm backend, frontend, ilişkiler, validasyonlar, seed verileri ve test akışları; Antigravity’nin AI destekli geliştirme ortamı kullanılarak oluşturulmuştur.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Antigravity, proje sürecinde kod üretimi, dosya oluşturma, otomasyon ve yapılandırma işlemlerini hızlandırarak geliştirme sürecini önemli ölçüde verimli hâle getirmiştir.
