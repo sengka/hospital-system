@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:08,400
+Welcome to the Hospital Appointment Management System demonstration. This automated test will showcase the complete workflow for patients, doctors, and administrators.
+
+2
+00:00:08,400 --> 00:00:20,000
+First, we navigate to the patient appointments page. Here, patients can view their existing appointments in a clean, organized table showing doctor names, departments, dates, times, and appointment status.
+
+3
+00:00:20,000 --> 00:00:32,399
+Now, let's create a new appointment. We click the "New Appointment" button, which takes us to the appointment creation form. The form is designed with Bootstrap for a modern, user-friendly interface.
+
+4
+00:00:32,399 --> 00:00:49,599
+We select a doctor from the dropdown menu. The system displays all available doctors in the hospital. Next, we choose a date and time for the appointment using the datetime picker. We can also add optional notes about the reason for the visit.
+
+5
+00:00:49,599 --> 00:01:04,399
+After filling out the form, we submit it by clicking "Create Appointment". The system validates the data and creates the appointment, then redirects us back to the appointments list where we can see our newly created appointment.
+
+6
+00:01:04,399 --> 00:01:15,999
+Next, we'll explore the doctor's panel. We navigate to the doctor appointments page. Here, doctors can see all their scheduled appointments with patient names, dates, times, and current status.
+
+7
+00:01:15,999 --> 00:01:31,199
+Doctors have the ability to update appointment statuses. We select a new status from the dropdown - options include pending, confirmed, cancelled, or completed. After selecting the status, we click update, and the system immediately saves the change.
+
+8
+00:01:31,199 --> 00:01:45,199
+Now, let's look at the admin panel. First, we visit the doctors management page. Administrators can see a complete list of all doctors in the system, including their names, email addresses, departments, and room numbers.
+
+9
+00:01:45,199 --> 00:02:02,399
+To add a new doctor, we click "Add New Doctor". This opens a comprehensive form where we enter the doctor's name and email address. We select their department from the dropdown menu, assign them a room number, and can optionally add a biography.
+
+10
+00:02:02,399 --> 00:02:12,799
+When we submit the form, the system creates the new doctor account and their associated doctor profile. The new doctor immediately appears in the doctors list.
+
+11
+00:02:12,799 --> 00:02:23,999
+Finally, we'll demonstrate department management. We navigate to the departments page where administrators can view all hospital departments. Each department shows how many doctors are assigned to it.
+
+12
+00:02:23,999 --> 00:02:35,199
+To create a new department, we click "Add New Department" and enter the department name. After submitting, the new department is created and available for assignment to doctors.
+
+13
+00:02:35,199 --> 00:02:47,999
+This completes our demonstration of the Hospital Appointment Management System. The system successfully handles patient appointments, doctor schedule management, and administrative functions, all with a clean, Bootstrap-based interface and robust data validation.
+

@@ -1,0 +1,25 @@
+Welcome to the Hospital Appointment Management System demonstration. This automated test will showcase the complete workflow for patients, doctors, and administrators.
+
+First, we navigate to the patient appointments page. Here, patients can view their existing appointments in a clean, organized table showing doctor names, departments, dates, times, and appointment status.
+
+Now, let's create a new appointment. We click the "New Appointment" button, which takes us to the appointment creation form. The form is designed with Bootstrap for a modern, user-friendly interface.
+
+We select a doctor from the dropdown menu. The system displays all available doctors in the hospital. Next, we choose a date and time for the appointment using the datetime picker. We can also add optional notes about the reason for the visit.
+
+After filling out the form, we submit it by clicking "Create Appointment". The system validates the data and creates the appointment, then redirects us back to the appointments list where we can see our newly created appointment.
+
+Next, we'll explore the doctor's panel. We navigate to the doctor appointments page. Here, doctors can see all their scheduled appointments with patient names, dates, times, and current status.
+
+Doctors have the ability to update appointment statuses. We select a new status from the dropdown - options include pending, confirmed, cancelled, or completed. After selecting the status, we click update, and the system immediately saves the change.
+
+Now, let's look at the admin panel. First, we visit the doctors management page. Administrators can see a complete list of all doctors in the system, including their names, email addresses, departments, and room numbers.
+
+To add a new doctor, we click "Add New Doctor". This opens a comprehensive form where we enter the doctor's name and email address. We select their department from the dropdown menu, assign them a room number, and can optionally add a biography.
+
+When we submit the form, the system creates the new doctor account and their associated doctor profile. The new doctor immediately appears in the doctors list.
+
+Finally, we'll demonstrate department management. We navigate to the departments page where administrators can view all hospital departments. Each department shows how many doctors are assigned to it.
+
+To create a new department, we click "Add New Department" and enter the department name. After submitting, the new department is created and available for assignment to doctors.
+
+This completes our demonstration of the Hospital Appointment Management System. The system successfully handles patient appointments, doctor schedule management, and administrative functions, all with a clean, Bootstrap-based interface and robust data validation.

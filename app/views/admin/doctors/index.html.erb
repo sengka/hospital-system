@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h1>Doktor Listesi</h1>
+  <%= link_to 'Yeni Doktor Ekle', new_admin_doctor_path, class: 'btn btn-success' %>
+</div>
+
+<div class="card shadow-sm">
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead class="table-light">
+          <tr>
+            <th>İsim</th>
+            <th>Email</th>
+            <th>Branş</th>
+            <th>Oda No</th>
+            <th>İşlemler</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @doctors.each do |doctor| %>
+            <tr>
+              <td><%= doctor.name %></td>
+              <td><%= doctor.email %></td>
+              <td><%= doctor.doctor_profile&.department&.name || '-' %></td>
+              <td><%= doctor.doctor_profile&.room_number || '-' %></td>
+              <td>
+                <button class="btn btn-sm btn-outline-primary">Düzenle</button>
+                <button class="btn btn-sm btn-outline-danger">Sil</button>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

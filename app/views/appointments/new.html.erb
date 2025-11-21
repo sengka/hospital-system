@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <div class="card shadow">
+      <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Yeni Randevu Oluştur</h4>
+      </div>
+      <div class="card-body">
+        <%= form_with(model: @appointment, local: true) do |form| %>
+          <% if @appointment.errors.any? %>
+            <div class="alert alert-danger">
+              <h4><%= pluralize(@appointment.errors.count, "error") %> prohibited this appointment from being saved:</h4>
+              <ul>
+                <% @appointment.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <div class="mb-3">
+            <%= form.label :doctor_id, 'Doktor Seçin', class: 'form-label' %>
+            <%= form.collection_select :doctor_id, User.where(role: :doctor), :id, :name, { prompt: 'Doktor Seçiniz' }, { class: 'form-select', required: true } %>
+          </div>
+
+          <div class="mb-3">
+            <%= form.label :scheduled_at, 'Tarih ve Saat', class: 'form-label' %>
+            <%= form.datetime_local_field :scheduled_at, class: 'form-control', required: true %>
+          </div>
+
+          <div class="mb-3">
+            <%= form.label :note, 'Notunuz (Opsiyonel)', class: 'form-label' %>
+            <%= form.text_area :note, class: 'form-control', rows: 3 %>
+          </div>
+
+          <div class="d-grid gap-2">
+            <%= form.submit 'Randevu Oluştur', class: 'btn btn-primary' %>
+            <%= link_to 'Geri Dön', appointments_path, class: 'btn btn-outline-secondary' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

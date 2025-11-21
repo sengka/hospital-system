@@ -1,0 +1,23 @@
+We're now on the patient appointments page. Let's create a new appointment.
+
+Clicking new appointment. Selecting a doctor from the dropdown.
+
+Choosing the appointment date and time. Adding a note about the visit.
+
+Submitting the form. Appointment created successfully.
+
+Now viewing the doctor's panel. Here are all scheduled appointments.
+
+Updating the appointment status to confirmed. Status updated.
+
+Switching to the admin panel. Viewing the list of all doctors.
+
+Adding a new doctor. Entering name and email.
+
+Selecting department and room number. Creating the doctor account.
+
+Now on the departments page. Adding a new department.
+
+Entering the department name. Department created successfully.
+
+Back to the appointments page. Demo complete.

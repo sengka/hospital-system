@@ -1,0 +1,45 @@
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h1>Randevularım</h1>
+  <%= link_to 'Yeni Randevu Al', new_appointment_path, class: 'btn btn-primary' %>
+</div>
+
+<div class="card shadow-sm">
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead class="table-light">
+          <tr>
+            <th>Doktor</th>
+            <th>Branş</th>
+            <th>Tarih</th>
+            <th>Saat</th>
+            <th>Durum</th>
+            <th>İşlemler</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @appointments.each do |appointment| %>
+            <tr>
+              <td><%= appointment.doctor.name %></td>
+              <td><%= appointment.doctor.doctor_profile.department.name %></td>
+              <td><%= appointment.scheduled_at.strftime("%d.%m.%Y") %></td>
+              <td><%= appointment.scheduled_at.strftime("%H:%M") %></td>
+              <td>
+                <span class="badge bg-<%= appointment.status == 'confirmed' ? 'success' : (appointment.status == 'cancelled' ? 'danger' : 'warning') %>">
+                  <%= appointment.status.humanize %>
+                </span>
+              </td>
+              <td>
+                <% if appointment.status != 'cancelled' %>
+                  <%= link_to 'İptal Et', appointment_path(appointment), 
+                      data: { turbo_method: :delete, turbo_confirm: 'Emin misiniz?' }, 
+                      class: 'btn btn-sm btn-outline-danger' %>
+                <% end %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

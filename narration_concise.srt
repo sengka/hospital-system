@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:04,799
+We're now on the patient appointments page. Let's create a new appointment.
+
+2
+00:00:04,799 --> 00:00:08,400
+Clicking new appointment. Selecting a doctor from the dropdown.
+
+3
+00:00:08,400 --> 00:00:13,199
+Choosing the appointment date and time. Adding a note about the visit.
+
+4
+00:00:13,199 --> 00:00:15,599
+Submitting the form. Appointment created successfully.
+
+5
+00:00:15,599 --> 00:00:19,600
+Now viewing the doctor's panel. Here are all scheduled appointments.
+
+6
+00:00:19,600 --> 00:00:22,800
+Updating the appointment status to confirmed. Status updated.
+
+7
+00:00:22,800 --> 00:00:27,200
+Switching to the admin panel. Viewing the list of all doctors.
+
+8
+00:00:27,200 --> 00:00:30,400
+Adding a new doctor. Entering name and email.
+
+9
+00:00:30,400 --> 00:00:34,000
+Selecting department and room number. Creating the doctor account.
+
+10
+00:00:34,000 --> 00:00:37,600
+Now on the departments page. Adding a new department.
+
+11
+00:00:37,600 --> 00:00:40,399
+Entering the department name. Department created successfully.
+
+12
+00:00:40,399 --> 00:00:43,199
+Back to the appointments page. Demo complete.
+

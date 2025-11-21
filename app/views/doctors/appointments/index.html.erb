@@ -1,0 +1,43 @@
+<div class="mb-4">
+  <h1>Randevu Yönetimi</h1>
+</div>
+
+<div class="card shadow-sm">
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>Hasta</th>
+            <th>Tarih</th>
+            <th>Saat</th>
+            <th>Not</th>
+            <th>Durum</th>
+            <th>İşlem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @appointments.each do |appointment| %>
+            <tr>
+              <td><%= appointment.patient.name %></td>
+              <td><%= appointment.scheduled_at.strftime("%d.%m.%Y") %></td>
+              <td><%= appointment.scheduled_at.strftime("%H:%M") %></td>
+              <td><%= appointment.note %></td>
+              <td>
+                <span class="badge bg-<%= appointment.status == 'confirmed' ? 'success' : (appointment.status == 'cancelled' ? 'danger' : 'warning') %>">
+                  <%= appointment.status.humanize %>
+                </span>
+              </td>
+              <td>
+                <%= form_with(model: [:doctors, appointment], local: true, class: 'd-flex gap-2') do |form| %>
+                  <%= form.select :status, Appointment.statuses.keys.map { |s| [s.humanize, s] }, {}, class: 'form-select form-select-sm', style: 'width: auto;' %>
+                  <%= form.submit 'Güncelle', class: 'btn btn-sm btn-primary' %>
+                <% end %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

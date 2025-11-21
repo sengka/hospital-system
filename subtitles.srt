@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:03,000
+Hastane Randevu Yönetim Sistemi
+
+2
+00:00:03,000 --> 00:00:06,000
+Hasta Paneli - Randevu Oluşturma
+
+3
+00:00:06,000 --> 00:00:09,000
+Doktor Paneli - Randevu Yönetimi
+
+4
+00:00:09,000 --> 00:00:12,000
+Admin Paneli - Sistem Yönetimi

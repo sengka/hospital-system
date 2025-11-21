@@ -1,0 +1,33 @@
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card shadow">
+      <div class="card-header bg-success text-white">
+        <h4 class="mb-0">Yeni Departman Ekle</h4>
+      </div>
+      <div class="card-body">
+        <%= form_with(model: [:admin, @department], url: admin_departments_path, local: true) do |form| %>
+          <% if @department.errors.any? %>
+            <div class="alert alert-danger">
+              <h4><%= pluralize(@department.errors.count, "error") %> prohibited this department from being saved:</h4>
+              <ul>
+                <% @department.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <div class="mb-3">
+            <%= form.label :name, 'Departman Adı', class: 'form-label' %>
+            <%= form.text_field :name, class: 'form-control', required: true %>
+          </div>
+
+          <div class="d-grid gap-2">
+            <%= form.submit 'Departman Ekle', class: 'btn btn-success' %>
+            <%= link_to 'Geri Dön', admin_departments_path, class: 'btn btn-outline-secondary' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

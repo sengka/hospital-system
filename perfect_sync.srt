@@ -1,0 +1,95 @@
+1
+00:00:00,500 --> 00:00:02,500
+Navigating to appointments page
+
+2
+00:00:02,500 --> 00:00:04,500
+Clicking new appointment
+
+3
+00:00:04,500 --> 00:00:07,000
+Selecting doctor
+
+4
+00:00:07,000 --> 00:00:09,500
+Entering date and time
+
+5
+00:00:09,500 --> 00:00:11,000
+Adding note
+
+6
+00:00:11,000 --> 00:00:13,000
+Creating appointment
+
+7
+00:00:13,000 --> 00:00:15,000
+Appointment created
+
+8
+00:00:15,000 --> 00:00:17,000
+Opening doctor panel
+
+9
+00:00:17,000 --> 00:00:19,000
+Viewing appointments
+
+10
+00:00:19,000 --> 00:00:21,500
+Updating status
+
+11
+00:00:21,500 --> 00:00:23,000
+Status confirmed
+
+12
+00:00:23,000 --> 00:00:24,500
+Opening admin panel
+
+13
+00:00:24,500 --> 00:00:26,000
+Viewing doctors
+
+14
+00:00:26,000 --> 00:00:27,500
+Adding new doctor
+
+15
+00:00:27,500 --> 00:00:30,000
+Entering doctor details
+
+16
+00:00:30,000 --> 00:00:32,500
+Selecting department
+
+17
+00:00:32,500 --> 00:00:34,000
+Creating doctor
+
+18
+00:00:34,000 --> 00:00:35,500
+Doctor created
+
+19
+00:00:35,500 --> 00:00:37,000
+Opening departments
+
+20
+00:00:37,000 --> 00:00:38,500
+Adding department
+
+21
+00:00:38,500 --> 00:00:40,000
+Entering name
+
+22
+00:00:40,000 --> 00:00:41,500
+Department created
+
+23
+00:00:41,500 --> 00:00:43,000
+Returning to home
+
+24
+00:00:43,000 --> 00:00:44,500
+Demo complete
